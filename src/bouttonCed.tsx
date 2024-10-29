@@ -14,6 +14,12 @@ function BoutonCed({ tableau }: valeur) {
     setBlagues(tableau[random].description);
   };
 
+  const [isLiked, setIsLiked] = useState(false);
+
+  const toggleLike = () => {
+    setIsLiked(!isLiked);
+  };
+
   return (
     <div className="name">
       <button type="button" onClick={handleClick}>
@@ -22,6 +28,9 @@ function BoutonCed({ tableau }: valeur) {
       <p className="text">
         <strong>{blagues}</strong>
       </p>
+      <button type="button" className="star" onClick={toggleLike}>
+        {isLiked ? "⭐" : "☆"}
+      </button>
     </div>
   );
 }

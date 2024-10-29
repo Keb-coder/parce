@@ -44,3 +44,11 @@ footer{
 width: 100%;
 text-align: center;
 }
+
+.star {
+  padding:2rem;
+  font-size: 2rem;
+  color: gray;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}

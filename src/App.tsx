@@ -2,24 +2,24 @@ import "./App.css";
 import BoutonCed from "./bouttonCed";
 
 function App() {
-  const tableauCed = [
-    {
-      description: "C'est l'histoire du ptit dej, tu la connais ? Pas de Bol",
-    },
-    {
-      description: "La blague du soir ",
-    },
-    {
-      description:
-        "C'est quoi un petit pois avec une épée face à une carotte avec une épée ? Un bon duel",
-    },
-    {
-      description: "La blague ",
-    },
-    {
-      description: "La",
-    },
-  ];
+
+  const tableauCed =[
+{ 
+    description: "C'est l'histoire du ptit dej, tu la connais ? Pas de Bol",
+  },
+{
+    description: "Quelle mamie fait peur aux voleurs ? Mamie Traillette. ",
+},
+{  
+    description: "C'est quoi un petit pois avec une épée face à une carotte avec une épée ? Un bon duel",
+},
+{
+    description: "Que faisaient les dinosaures quand ils n'arrivaient pas à se décider ? Des tirageosaures.",
+},
+{
+    description: "Pourquoi est-ce qu'il faut mettre tous les crocos en prison ? Parce que les crocos dealent.",
+},
+  ]
 
   const tableauAngelica = [
     {
@@ -98,9 +98,8 @@ function App() {
       </header>
       <main>
         <section className="section">
-          <div className="classtest">
-            <BoutonCed tableau={tableauCed} />
-          </div>
+          
+          <BoutonCed tableau={tableauCed} />
           <BoutonCed tableau={tableauAngelica} />
           <BoutonCed tableau={tableauAlex} />
           <BoutonCed tableau={tableauDarkhaa} />
