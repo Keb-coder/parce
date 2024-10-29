@@ -13,6 +13,7 @@ function BoutonCed({ tableau, textebouton }: valeur) {
   const handleClick = () => {
     const random = Math.floor(Math.random() * tableau.length);
     setBlagues(tableau[random].description);
+    setIsLiked(false);
   };
 
   const [isLiked, setIsLiked] = useState(false);
