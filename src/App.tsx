@@ -9,7 +9,7 @@ function App() {
   },
 {
   id:2,
-    description: "LA blague du soir ",
+    description: "Quelle mamie fait peur aux voleurs ? Mamie Traillette. ",
 },
 {
   id:3,  
@@ -17,11 +17,11 @@ function App() {
 },
 {
     id:4,
-    description: "La blague ",
+    description: "Que faisaient les dinosaures quand ils n'arrivaient pas à se décider ? Des tirageosaures.",
 },
 {
     id:5,
-    description: "La",
+    description: "Pourquoi est-ce qu'il faut mettre tous les crocos en prison ? Parce que les crocos dealent.",
 },
 
   ];
@@ -38,9 +38,7 @@ function App() {
     <div className='classtest'>
       <BoutonCed tableau={tableau} />
       </div>
-      <BoutonCed tableau={tableau} />
-      <BoutonCed tableau={tableau} />
-      <BoutonCed tableau={tableau} />
+
     
     </section>
     </main>

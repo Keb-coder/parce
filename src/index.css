@@ -31,10 +31,7 @@ body{
 .header{
   background-color: #FF9505;
   text-align: center;
-}    <BoutonCed tableau={tableau} />
-<BoutonCed tableau={tableau} />
-<BoutonCed tableau={tableau} />
-
+}  
 
 main{
   margin-top: 7rem;
@@ -46,4 +43,12 @@ footer{
   background-color: #FF9505;
 width: 100%;
 text-align: center;
+}
+
+.star {
+  padding:2rem;
+  font-size: 2rem;
+  color: gray;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
