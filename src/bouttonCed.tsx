@@ -3,10 +3,11 @@ import { useState } from "react";
 interface valeur {
   tableau: {
     description: string;
-  }[];
+  }[]
+  textebouton : string;
 }
 
-function BoutonCed({ tableau }: valeur) {
+function BoutonCed({ tableau, textebouton }: valeur) {
   const [blagues, setBlagues] = useState("Afficher votre blague ici");
 
   const handleClick = () => {
@@ -23,7 +24,7 @@ function BoutonCed({ tableau }: valeur) {
   return (
     <div className="name">
       <button type="button" onClick={handleClick}>
-        Cliquez-ici
+        {textebouton}
       </button>
       <p className="text">
         <strong>{blagues}</strong>

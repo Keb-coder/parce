@@ -2,24 +2,26 @@ import "./App.css";
 import BoutonCed from "./bouttonCed";
 
 function App() {
-
-  const tableauCed =[
-{ 
-    description: "C'est l'histoire du ptit dej, tu la connais ? Pas de Bol",
-  },
-{
-    description: "Quelle mamie fait peur aux voleurs ? Mamie Traillette. ",
-},
-{  
-    description: "C'est quoi un petit pois avec une épée face à une carotte avec une épée ? Un bon duel",
-},
-{
-    description: "Que faisaient les dinosaures quand ils n'arrivaient pas à se décider ? Des tirageosaures.",
-},
-{
-    description: "Pourquoi est-ce qu'il faut mettre tous les crocos en prison ? Parce que les crocos dealent.",
-},
-  ]
+  const tableauCed = [
+    {
+      description: "C'est l'histoire du ptit dej, tu la connais ? Pas de Bol",
+    },
+    {
+      description: "Quelle mamie fait peur aux voleurs ? Mamie Traillette. ",
+    },
+    {
+      description:
+        "C'est quoi un petit pois avec une épée face à une carotte avec une épée ? Un bon duel",
+    },
+    {
+      description:
+        "Que faisaient les dinosaures quand ils n'arrivaient pas à se décider ? Des tirageosaures.",
+    },
+    {
+      description:
+        "Pourquoi est-ce qu'il faut mettre tous les crocos en prison ? Parce que les crocos dealent.",
+    },
+  ];
 
   const tableauAngelica = [
     {
@@ -98,15 +100,20 @@ function App() {
       </header>
       <main>
         <section className="section">
-          
-          <BoutonCed tableau={tableauCed} />
-          <BoutonCed tableau={tableauAngelica} />
-          <BoutonCed tableau={tableauAlex} />
-          <BoutonCed tableau={tableauDarkhaa} />
+          <BoutonCed tableau={tableauCed} textebouton="Blagues de Cédric" />
+          <BoutonCed
+            tableau={tableauAngelica}
+            textebouton="Blagues d'Angelica"
+          />
+          <BoutonCed tableau={tableauAlex} textebouton="Blagues d'Alexandre" />
+          <BoutonCed
+            tableau={tableauDarkhaa}
+            textebouton="Blagues de Darkhaa"
+          />
         </section>
       </main>
       <footer>
-        <p>description</p>
+        <p>© Team Parces 2024: Angelica, Alexandre, Cédric, Darkhaa</p>
       </footer>
     </>
   );
