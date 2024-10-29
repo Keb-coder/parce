@@ -31,10 +31,7 @@ body{
 .header{
   background-color: #FF9505;
   text-align: center;
-}    <BoutonCed tableau={tableau} />
-<BoutonCed tableau={tableau} />
-<BoutonCed tableau={tableau} />
-
+}    
 
 main{
   margin-top: 7rem;
